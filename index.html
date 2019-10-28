@@ -48,7 +48,7 @@
 		var stocks_arr_high = [];
 		var stocks_arr_low = [];
 		var stocks_arr_time = [];
-		stocks.once('value', function(snapshot) {
+		stocks.on('value', function(snapshot) {
 			//updateStarCount(postElement, snapshot.val());
 			
 				snapshot.forEach(function(childSnapshot) {
